@@ -1,0 +1,41 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.formInput label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.formInput input {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.formInput input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.formInput span.error {
+  font-size: 14px;
+  color: #dc3545;
+  margin-top: 5px;
+  display: block;
+}
+
+.formInput input:invalid[focused="true"] {
+  border: 1px solid #dc3545;
+}
+
+.formInput input:invalid[focused="true"] ~ span {
+  display: block;
+}
